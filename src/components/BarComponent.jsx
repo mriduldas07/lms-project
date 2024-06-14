@@ -52,7 +52,7 @@ export const BarComponent = () => {
     <BarChart
       //   height={250}
       //   width={600}
-      className="w-screen"
+      //   className="w-"
       active={true}
       showBg={true}
       showXAxis={true}
@@ -61,6 +61,9 @@ export const BarComponent = () => {
       chartData={BarChartData}
       dataKey="price"
       secondaryDataKey="sell"
+      style={{
+        maxWidth: "100px",
+      }}
     />
   );
 };

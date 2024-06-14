@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
-    <div className="bg-[url('/img/bg-2.webp')] h-screen bg-no-repeat text-white">
-      <div className="grid grid-cols-2">
+    <div className="bg-[url('/img/bg-2.webp')] w-fit lg:w-full lg:h-screen bg-no-repeat text-white">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className="w-full py-72 px-28">
-          <h1 className="text-6xl font-bold text-center">
+          <h1 className="text-2xl lg:text-6xl lg:font-bold text-center">
             Empowering Minds, One Course at a Time.Transforming Education for a
             Brighter Tomorrow
           </h1>

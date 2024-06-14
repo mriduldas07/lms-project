@@ -46,7 +46,7 @@ export default function SignUp() {
 
   return (
     <div className="">
-      <h1 className="text-3xl lg:text-5xl text-center py-12">
+      <h1 className="text-2xl lg:text-5xl text-center py-12">
         Start Your Path to Knowledge Here
       </h1>
       <div className="flex justify-center items-center w-full">

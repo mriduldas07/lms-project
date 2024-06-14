@@ -43,7 +43,7 @@ export default function SignIn() {
 
   return (
     <div className="">
-      <h1 className="text-3xl lg:text-5xl text-center py-12">
+      <h1 className="text-2xl lg:text-5xl text-center py-12">
         Sign In and Start Your Learning Journey.
       </h1>
       <div className="flex justify-center items-center w-full lg:py-16">

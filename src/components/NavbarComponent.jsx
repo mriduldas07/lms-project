@@ -19,7 +19,7 @@ export default function NavbarComponent() {
               className="hidden lg:block"
             />
             <Link to={`/`}>
-              <h1 className="font-bold text-sm lg:text-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 inline-block text-transparent bg-clip-text">
+              <h1 className="font-bold text-lg lg:text-2xl bg-gradient-to-r from-violet-500 to-fuchsia-500 inline-block text-transparent bg-clip-text">
                 E-Learning
               </h1>
             </Link>
@@ -28,8 +28,23 @@ export default function NavbarComponent() {
 
           <Navbar.Collapse collapseType="sidebar">
             <Navbar.Container tag="ul" className="flex flex-col gap-5">
-              <Navbar.Link linkName="Sign up" />
-              <Navbar.Link linkName="Sign In" />
+              <Link to={`/sign-up`}>
+                <span className="text-md font-semibold bg-gradient-to-r from-violet-500 to-fuchsia-500 inline-block text-transparent bg-clip-text cursor-pointer">
+                  Sign Up
+                </span>
+              </Link>
+              <Link to={`/sign-in`}>
+                <span className="text-md font-semibold bg-gradient-to-r from-violet-500 to-fuchsia-500 inline-block text-transparent bg-clip-text cursor-pointer">
+                  Sign In
+                </span>
+              </Link>
+              {user && (
+                <Link to={`/dashboard`}>
+                  <span className="text-md font-semibold bg-gradient-to-r from-violet-500 to-fuchsia-500 inline-block text-transparent bg-clip-text cursor-pointer">
+                    Dashboard
+                  </span>
+                </Link>
+              )}
             </Navbar.Container>
           </Navbar.Collapse>
         </Navbar.Container>
